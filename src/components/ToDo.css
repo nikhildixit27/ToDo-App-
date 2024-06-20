@@ -1,0 +1,139 @@
+.todo-container {
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 65%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.filter-sort-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-buttons, .sort-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.filter-buttons label, .sort-buttons label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+.filter-buttons button, .sort-buttons button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button.active, .sort-buttons button.active {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+}
+
+.filter-buttons button:hover, .sort-buttons button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    margin: 5px 0;
+    background: white;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+span {
+    cursor: pointer;
+    flex: 1;
+}
+
+span.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+.icon.completed-icon {
+    color: green;
+}
+
+.icon.remove-icon {
+    color: #FF4D4D;
+}
+
+.icon:hover {
+    color: #0056b3;
+}
